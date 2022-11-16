@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CARD DETILS</title>
+         <script>  
+             function validateform(){  
+             var Account_Number=document.form.Account_Number.value;  
+             var name=document.form.name.value;  
+             var cvv=document.form.cvv.value;
+             if (Account_Number=="96420200" && name=="vijay" && cvv=="088"){  
+                alert("Payment was successful");      
+              }else {  
+                alert("Account details are incorrect");  
+                    }  
+                 }  
+         </script>
+         
+    </head>
+    <body>
+        <h1>Enter the Card Details</h1>
+        <hr>
+        <form name="form">
+            Account Number<input type="text" id="Account_Number" name="Account_Number"  pattern="[0-9]{9}" maxlength="9"></br>
+            </br>
+            Name on the Card<input type="text" id="name" name="name" maxlength="8"></br>
+                        </br>
+            Date of Expiry  <select name="Month">
+          <option value="january">January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select>        
+        <select name="Year">
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+        </select></br></br>
+            CVV<input type="password" id="cvv" name="cvv" placeholder="CVV" maxlength="3"></br>
+                        </br>
+            <button type="button" id="vijay" onclick="validateform()">PAY</button>
+          <input type="reset">
+        </form>   
+        <hr>   
+    </body>
+</html>
